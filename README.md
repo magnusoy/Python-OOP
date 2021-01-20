@@ -6,7 +6,7 @@
 `Python-OOP` er et nettkurs hos [Utdannet.no](https://www.utdannet.no/kurs/python-oop/) og tar for seg det Objekt Orientert Programmering i Python.
 
 
-Dette kurset bygger videre på [Python-Grunnleggende](https://www.utdannet.no/kurs/python-grunnleggende/) og kurset baserer seg derfor på at grunnleggende programmering med Python er kjent for deltakeren.
+Dette kurset bygger videre på [Python-Grunnleggende](https://www.utdannet.no/kurs/python-grunnkurs/) og kurset baserer seg derfor på at grunnleggende programmering med Python er kjent for deltakeren.
 
 
 ## Forutsetninger
