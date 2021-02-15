@@ -12,16 +12,17 @@ Følgende konverteringen skal finnes i klassen:
 
 class MetricConverter:
 
-    def foot_to_meter(self, foot):
-        return foot / 3.281
-
-    def pound_to_kilogram(self, pound):
+    @staticmethod
+    def feet_to_meter(feet):
+        return feet / 3.281
+    
+    @staticmethod
+    def pound_to_kilogram(pound):
         return pound / 2.205
-
-    def fahrenheit_to_celcius(self, fahrenheit):
-        return (fahrenheit - 32) * 5/9
-
-metric_converter = MetricConverter()
+    
+    @staticmethod
+    def fahrenheit_to_celcius(fahrenheit):
+        return (fahrenheit - 32) * 5 / 9
 
 """
 Oppgave 2
@@ -34,6 +35,6 @@ resultatet i en ny liste.
 
 pounds = [180, 201, 289, 167, 142, 190, 154, 314]
 
-kilograms = [int(metric_converter.pound_to_kilogram(pound)) for pound in pounds]
+kilograms = [int(MetricConverter.pound_to_kilogram(pound)) for pound in pounds]
 print(pounds)
 print(kilograms)
