@@ -34,7 +34,7 @@ class ApplicationUI:
         
         max_menu_item_number = len(menu) + 1
         print(f"{max_menu_item_number}. Exit\n")
-        print(f"Please choose menu item (1-{max_menu_item_number}: ")
+        print(f"Please choose menu item (1-{max_menu_item_number}): ")
 
         menu_selection = int(input())
         if (menu_selection < 1) or (menu_selection > max_menu_item_number):
@@ -49,37 +49,37 @@ class ApplicationUI:
             menu_selection = self.show_menu(menu_items)
             if menu_selection == 1:
                 self.add_literature()
-                pass
+
             elif menu_selection == 2:
                 self.remove_literature()
-                pass
+
             elif menu_selection == 3:
                 self.search_for_literature_title()
-                pass
+
             elif menu_selection == 4:
                 self.search_for_literature_author()
-                pass
+
             elif menu_selection == 5:
                 self.search_for_literature_type()
-                pass
+
             elif menu_selection == 6:
                 self.search_for_literature_publisher()
-                pass
+
             elif menu_selection == 7:
                 self.search_for_all_literature_publisher()
-                pass
+
             elif menu_selection == 8:
                 self.list_all_literatures()
-                pass
+
             elif menu_selection == 9:
                 self.number_of_literatues()
-                pass
+
             elif menu_selection == 10:
                 self.add_book_to_series()
-                pass
+
             elif menu_selection == 11:
                 self.list_book_serie()
-                pass
+
             else:
                 if self.want_to_quit():
                     quit = True
